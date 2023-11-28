@@ -1,0 +1,6 @@
+#!/bin/bash
+file_name=$(basename -s .py $PYFILE)
+python3 -m compileall "$PYFILE"
+compiled_file=$(find "__pycache__" -type f -name "*.pyc" -print -quit)
+mv "$compiled_file" "$file_name.pyc"
+rm -r "__pycache__"
