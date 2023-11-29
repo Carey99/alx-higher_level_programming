@@ -6,4 +6,3 @@ def print_last_digit(number):
             result += i
             print("{:d}".format(int(result)), end="")
             return int(result)
-
