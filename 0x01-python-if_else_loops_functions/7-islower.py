@@ -10,4 +10,4 @@ def islower(c):
     bool: True if lowercase else false.
     """
 
-    return 'a' <= c <= 'z'
+    return 'a' <= c <= 'z' if c else False
