@@ -2,7 +2,5 @@
 """A rectangle class"""
 
 class Rectangle:
-    """
-    Defining a rectangle
-    """
+    """Defining a rectangle"""
     pass
