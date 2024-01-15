@@ -25,3 +25,6 @@ class TestingForBase(unittest.TestCase):
 
     def tet_for_dict(self):
         self.assertEqual({"p": 1, "y": 2}, Base({"p": 1, "y": 2}).id)
+
+if __name__ == "__main__":
+    unittest.main()

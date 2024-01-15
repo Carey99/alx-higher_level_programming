@@ -115,3 +115,7 @@ class TestRectangle_area(unittest.TestCase):
         r = Rectangle(2, 10, 1, 1, 1)
         with self.assertRaises(TypeError):
             r.area(1)
+
+
+if __name__ == "__main__":
+    unittest.main()
