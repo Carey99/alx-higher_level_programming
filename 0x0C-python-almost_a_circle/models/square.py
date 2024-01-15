@@ -17,15 +17,13 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     @property
-    def size(self): 
+    def size(self):
         return self.width
-
 
     @size.setter
     def size(self, value):
         self.width = value
         self.height = value
-
 
     def __str__(self):
         """module string represation of square
@@ -63,4 +61,3 @@ class Square(Rectangle):
             "x": self.x,
             "y": self.y
         }
-
