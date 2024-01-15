@@ -13,7 +13,7 @@ class Rectangle(Base):
         """
         Defining insatnce attr(private)
         """
-        super().__init__(id=None)
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
