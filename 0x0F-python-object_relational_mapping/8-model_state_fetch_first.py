@@ -1,5 +1,6 @@
-#!/usr/bin/python"""Script that lists firts objects from a database using alchemy
+#!/usr/bin/python3
 """Lists the firts objects from a database using alchemy"""
+import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import (create_engine)
