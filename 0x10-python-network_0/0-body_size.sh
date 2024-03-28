@@ -1,3 +1,3 @@
 #!/bin/bash
-response=$(curl -s -w "%{size_download}" -o /dev/null "$1")
-echo "$response"
+
+curl -s -w "%{size_download}\n" -o /dev/null "$1"
