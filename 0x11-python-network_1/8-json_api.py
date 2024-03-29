@@ -13,8 +13,7 @@ if __name__ == "__main__":
     data = {'q': q}
 
     try:
-        r = requests.post(url, data=data)
-        json_r = r.json()
+        response = requests.post(url, data=data)
 
         json_response = response.json()
         if json_response:
