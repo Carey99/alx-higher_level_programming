@@ -9,6 +9,7 @@ if __name__ == "__main__":
 
     try:
         r = requests.get(url)
+        r.raise_for_status()
 
         print(r.text)
     except requests.exceptions.RequestException as e:
