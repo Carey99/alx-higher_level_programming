@@ -5,8 +5,6 @@ import sys
 
 
 if __name__ == "__main__":
-    if sys.argv != 2:
-        sys.exit(1)
     url = sys.argv[1]
 
     req = urllib.request.Request(url)
