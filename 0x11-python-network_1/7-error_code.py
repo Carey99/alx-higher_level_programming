@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     try:
         r = requests.get(url)
+
         print(r.text)
     except requests.exceptions.RequestException as e:
-        if r.status_code >= 400:
-            print("Error code", r.status_code)
+        print("Error code", r.status_code)
