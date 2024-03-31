@@ -2,7 +2,6 @@
 """Displays users GitHub id"""
 import requests
 import sys
-from requests.auth import HTTPBasicAuth
 
 
 if __name__ == "__main__":
@@ -10,7 +9,7 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
 
-    response = requests.get(url, auth=HTTPBasicAuth(username, password))
+    response = requests.get(url, auth=(username, password))
     if response.status_code == 200:
         data = response.json()
         print(data['id'])
