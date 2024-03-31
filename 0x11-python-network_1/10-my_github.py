@@ -10,7 +10,7 @@ if __name__ == "__main__":
     auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
 
     response = requests.get(url, auth=auth)
-    if response.status_code == 200:
+    if response:
         data = response.json()
         print(data['id'])
     else:
